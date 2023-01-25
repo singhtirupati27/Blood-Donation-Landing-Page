@@ -61,6 +61,10 @@ a {
 .center-text h2 {
     font-size: 35px;
 }
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 /* Header start */
 .header {
     background-color: black;
@@ -721,15 +725,13 @@ a {
 
 /* Testimonals page start */
 .testimonals {
-    border: 1px solid black;
-    height: 700px;
-    background-color: #f5f4f42e;
+    height: 600px;
+    background-color: #f5f4f42e
 }
 
 .testimonals-wrap {
     position: relative;
     height: 100%;
-    border: 1px solid darkorange;
 }
 
 .testimonals-content {
@@ -737,18 +739,17 @@ a {
     top: 10%;
     left: 0;
     width: 100%;
-    height: 100%;
-    border: 1px solid red;
 }
 
-.test-float-box {
-    float: left;
-    width: 32%;
-    border: 1px solid black;
+.test-flex {
+    display: flex;
+    gap: 20px;
+    padding: 0 5px;
 }
 
-.test-float-box:nth-child(2) {
-    margin: 0 15px;
+.test-flex-box-inner {
+    background-color: white;
+    padding: 30px 20px;
 }
 
 .star-box {
@@ -758,6 +759,37 @@ a {
 .star-box img {
     height: 20px;
     width: 20px;
+}
+
+.test-para {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.test-details {
+    display: flex;
+    gap: 15px;
+    padding: 30px 20px;
+}
+
+.test-img img {
+    height: 60px;
+    width: 60px;
+}
+
+.test-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.test-text h3 {
+    margin-bottom: 7px;
+}
+
+.test-text p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
 }
 /* Testimonals page end */
 
