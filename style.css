@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
 }
@@ -169,7 +173,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 90vh; */
-    height: 700px;
+    height: 650px;
     position: relative;
 }
 
@@ -272,7 +276,7 @@ a {
     background-color: black;
     height: 50px;
     left: 0;
-    bottom: 100px;
+    bottom: 80px;
     width: 100%;
 }
 /* Home page end */
@@ -309,6 +313,14 @@ a {
     padding: 10px;
     text-align: center;
     background-color: white;
+}
+
+.hp-box:hover .hp-img {
+    background-color: red;
+}
+
+.hp-box:hover .read-btn {
+    background-color: red;
 }
 
 .hp-wrap-box img {
@@ -539,7 +551,7 @@ a {
 }
 
 .service-text-box {
-    padding: 68px 15px;
+    padding: 66px 15px;
 }
 
 .service-text-box h2 {
@@ -659,6 +671,35 @@ a {
     width: 48.9%;
     height: 100%;
     background-color: white;
+    position: relative;
+}
+
+.camp-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.camp-float-box:hover .camp-img-overlay {
+    opacity: 1;
+}
+
+.camp-float-box:hover h3 {
+    color: red;
+}
+
+.camp-img-overlay h4 {
+    color: white;
 }
 
 .camp-float-box:last-child {
@@ -792,6 +833,51 @@ a {
     color: rgba(0, 0, 0, 0.5);
 }
 /* Testimonals page end */
+
+/* Donor page start */
+.donor-pg {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.73)), url("./images/blood-donor-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+}
+
+.donor-pg-wrap {
+    position: relative;
+    height: 100%;
+    border: 1px solid whitesmoke;
+}
+
+.donor-content {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    color: white;
+    border: 1px solid green;
+}
+
+.play-box {
+    border: 1px solid white;
+    display: inline-block;
+    border-top: 0;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.play-box button {
+    padding: 5px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.play-box img {
+    height: 20px;
+    width: 20px;
+}
+/* Donor page end */
 
 /* News page start */
 .news-pg {
@@ -932,15 +1018,206 @@ a {
 }
 /* Information page end */
 
-/* Donor page start */
-/* .donor-pg {
-    height: 370px;
-    background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.73)), url("./images/blood-donor-bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-/* Donor page end */
+/* Footer start */
+.footer {
+    background-color: black;
+    height: 550px;
+    position: relative;
+}
+
+.footer-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.footer-content {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.footer-flex {
+    display: flex;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-flex > .footer-flex-box > h3:first-child {
+    margin-bottom: 40px;
+}
+
+.footer-flex-box:first-child, .footer-flex-box:last-child {
+    width: 30%;
+}
+
+.footer-flex-box:nth-child(2), .footer-flex-box:nth-child(3) {
+    width: 20%;
+}
+
+.footer-flex-box:first-child {
+    padding-right: 60px;
+}
+
+.footer-flex-box > p {
+    line-height: 1.5;
+}
+
+.quick-links li {
+    display: block;
+}
+
+.quick-links li a {
+    color: white;
+    line-height: 2;
+}
+
+.quick-links li a:hover {
+    color: red;
+}
+
+.quick-links li img {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+}
+
+.ftr-news-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.ftr-news-img img {
+    height: 70px;
+    width: 70px;
+}
+
+.ftr-news-text h3 {
+    line-height: 1.5;
+}
+
+.ftr-news-text p {
+    color: red;
+    font-size: 15px;
+}
+
+.ftr-flex-box-1 {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ftr-flex-left {
+    width: 50%;
+}
+
+.subscribe-box {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    height: 50px;
+    width: 440px;
+    padding: 3px;
+    font-size: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-box input {
+    height: 40px;
+    width: 284px;
+    background-color: black;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.subscribe-box input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    padding-left: 10px;
+}
+
+.subs-btn {
+    height: 40px;
+    padding: 12px 30px;
+    margin-top: 0;
+}
+
+.subs-btn:hover {
+    background-color: #cb0e0e;
+}
+
+.ftr-flex-right {
+    width: 50%;
+    text-align: right;
+}
+
+.ftr-flex-img {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: end;
+}
+
+.ftr-flex-img img {
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    display: block;
+    background-color: red;
+}
+
+.ftr-para {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding: 15px 0;
+}
+
+.ftr-para a {
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ftr-para a:hover {
+    color: red;
+}
+
+.copyright-box {
+    text-align: center;
+    font-size: 15px;
+}
+
+.back-top {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.back-top a {
+    padding: 12px;
+}
+
+.back-top img {
+    height: 20px;
+    width: 20px;
+}
+
+.back-top-btn {
+    background-color: red;
+    border: 0;
+}
+
+.back-top-btn:hover {
+    background-color: rgba(255, 0, 0, 0.788);
+    cursor: pointer;
+}
+/* Footer end */
+
 
 /* 
 
