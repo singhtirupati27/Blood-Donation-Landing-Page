@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root {
+    --red-color: rgb(214, 29, 29);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -56,7 +60,7 @@ a {
 }
 
 .center-text h5 {
-    color: red;
+    color: var(--red-color);
     font-weight: 300;
     font-size: 15px;
     margin-bottom: 20px;
@@ -72,10 +76,70 @@ a {
 /* Header start */
 .header {
     background-color: black;
-    background: linear-gradient(to right, rgb(0, 0, 0)70%, rgb(255, 0, 0)30%);
+    background: linear-gradient(to right, rgb(0, 0, 0)50%, var(--red-color)50%);
 }
 
-.hdr-container {
+.header-background {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hdr-container:last-child {
+    background-color: var(--red-color);
+}
+
+.hdr-container img {
+    height: 20px;
+    width: 20px;
+}
+
+.left-hdr li {
+    padding-right: 80px;
+}
+
+.left-hdr li:last-child {
+    padding-right: 30px;
+}
+
+.left-hdr li a {
+    padding: 12px 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.left-hdr li span {
+    border-right: 1px solid white;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+
+.right-hdr {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-hdr li {
+    padding: 6px;
+}
+
+.right-hdr li:first-child {
+    padding-left: 43px;
+    padding-right: 20px;
+}
+
+.right-hdr li img {
+    background-color: white;
+    padding: 8px;
+    display: block;
+}
+
+/* Using float */
+/* .hdr-container {
     display: inline-block;
 }
 
@@ -103,11 +167,12 @@ a {
 
 .hdr-container:last-child {
     float: right;
+    background-color: red;
 }
 
 .right-hdr {
     color: white;
-    padding: 3px 0;
+    padding: 4px 0;
 }
 
 .right-hdr img {
@@ -123,24 +188,27 @@ a {
 .right-hdr li:first-child {
     padding-left: 60px;
     padding-right: 20px;
-}
+} */
 /* Header end */
 
 /* Navbar start */
 .navbar {
-    /* border: 1px solid brown; */
     clear: right;
-    /* background: linear-gradient(to right, rgb(255, 0, 0)10%, rgb(255, 255, 255)90%); */
+    background: linear-gradient(to right, var(--red-color)40%, rgb(255, 255, 255)60%);
+}
+
+.nav-background {
+    background-color: white;
 }
 
 .nav-logo {
     display: inline-block;
-    background-color: red;
+    background-color: var(--red-color);
 }
 
 .nav-logo a {
     color: white;
-    padding: 20px 55px;
+    padding: 20px 100px;
     padding-left: 0;
     font-size: 35px;
     font-weight: 700;
@@ -157,7 +225,7 @@ a {
 }
 
 .nav-menu ul li a:hover {
-    color: red;
+    color: var(--red-color);
 }
 .nav-item li img {
     height: 10px;
@@ -172,7 +240,6 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 90vh; */
     height: 650px;
     position: relative;
 }
@@ -200,7 +267,7 @@ a {
 }
 
 .intro img:hover {
-    background-color: black;
+    background-color: red;
 }
 
 .intro img {
@@ -219,7 +286,7 @@ a {
 }
 
 .hm-content h3 {
-    color: red;
+    color: var(--red-color);
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -253,7 +320,7 @@ a {
 }
 
 .float-container .f-box:last-child {
-    background-color: red;
+    background-color: var(--red-color);
 }
 
 .f-box {
@@ -316,11 +383,11 @@ a {
 }
 
 .hp-box:hover .hp-img {
-    background-color: red;
+    background-color: var(--red-color);
 }
 
 .hp-box:hover .read-btn {
-    background-color: red;
+    background-color: var(--red-color);
 }
 
 .hp-wrap-box img {
@@ -365,11 +432,6 @@ a {
     background-color: black;
     margin-top: 0;
 }
-
-.read-btn:hover {
-    background-color: red;
-    cursor: pointer;
-}
 /* Help page end */
 
 /* About page start */
@@ -397,7 +459,6 @@ a {
 }
 
 .abt-img img {
-    /* height: 547px; */
     height: 100%;
 }
 
@@ -408,7 +469,7 @@ a {
 }
 
 .abt-text h5 {
-    color: red;
+    color: var(--red-color);
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -586,7 +647,7 @@ a {
     padding: 70px 0;
     color: white;
     text-align: center;
-    border: 6px solid red;
+    border: 6px solid var(--red-color);
 }
 
 .contact-img {
@@ -599,7 +660,7 @@ a {
     width: 60px;
     height: 60px;
     rotate: 315deg;
-    background-color: red;
+    background-color: var(--red-color);
 }
 
 .contact-img img {
@@ -686,7 +747,7 @@ a {
 }
 
 .camp-float-box:hover h3 {
-    color: red;
+    color: var(--red-color);
 }
 
 .camp-img-overlay h4 {
@@ -751,7 +812,7 @@ a {
 }
 
 .camp-pg-indicator input {
-    accent-color: red;
+    accent-color: var(--red-color);
 }
 /* Campaign page end */
 
@@ -1085,7 +1146,7 @@ a {
 
 .cmt-box img, .cmt-box p {
     display: inline-block;
-    color: red;
+    color: var(--red-color);
 }
 
 .cmt-box img {
@@ -1119,14 +1180,14 @@ a {
 }
 
 .read-more-btn:hover {
-    color: red;
+    color: var(--red-color);
     cursor: pointer;
 }
 /* News page end */
 
 /* Information page start */
 .info {
-    background-color: red;
+    background-color: var(--red-color);
     height: 200px;
 }
 
@@ -1235,7 +1296,7 @@ a {
 }
 
 .quick-links li a:hover {
-    color: red;
+    color: var(--red-color);
 }
 
 .quick-links li img {
@@ -1260,7 +1321,7 @@ a {
 }
 
 .ftr-news-text p {
-    color: red;
+    color: var(--red-color);
     font-size: 15px;
 }
 
@@ -1327,7 +1388,7 @@ a {
     width: 15px;
     padding: 10px;
     display: block;
-    background-color: red;
+    background-color: var(--red-color);
 }
 
 .ftr-para {
@@ -1344,7 +1405,7 @@ a {
 }
 
 .ftr-para a:hover {
-    color: red;
+    color: var(--red-color);
 }
 
 .copyright-box {
@@ -1368,7 +1429,7 @@ a {
 }
 
 .back-top-btn {
-    background-color: red;
+    background-color: var(--red-color);
     border: 0;
 }
 
@@ -1377,19 +1438,3 @@ a {
     cursor: pointer;
 }
 /* Footer end */
-
-
-/* 
-
-top 50%
-left 50% 
-transform: translate -50 -50
-*/
-
-/* 
-navbar linear gradient
-  wrapper container
-    container bg white
-      container content main
-
-*/
